@@ -1,0 +1,34 @@
+
+.centerpane{
+ margin-bottom: 0px;
+ margin-left: 0px;
+}
+.holder {
+    float: left;
+  width: 88%;
+  margin-left: -20%;
+  margin-top: -10px;
+  text-align: center;
+  margin-bottom: 80px;
+  background: ;
+  padding: 12px;
+  margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.holder_inside {
+  float: left;
+  width: 44%;
+  margin-left: 0%;
+  margin-top: 14px;
+  text-align: center;
+  margin-bottom: 80px;
+  
+  padding: 12px;
+  margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+

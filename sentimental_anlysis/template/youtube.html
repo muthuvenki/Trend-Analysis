@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sentimental Analysis</title>
+    
+    {% load static %}
+    <!-- chart js file-->
+    <script src="{% static 'js/Chart.js' %}"></script>
+
+    <!-- chart css file -->
+    <link rel="stylesheet" href="{% static 'css/front.css' %}" type="text/css">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/sb-admin-2.css' %}" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{% static 'font-awesome-4.1.0/css/font-awesome.min.css' %}" type="text/css">
+
+    
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <!-- <a href="index.html"><img src="{{STATIC_URL}}img/bi2iLogo.png" alt="Smiley face" width="42" height="42" style="  margin-left: 50px;margin-top: 5px;width: inherit;"></a> -->
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <p class="fa" style="font-size: 18px;margin-right: 985px;margin-top: 17px;color: cornflowerblue;">SENTIMENTAL ANLYSIS ON SOCIAL MEDIA</p>
+            </ul>
+            <!-- /.navbar-top-links -->
+
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                       <li>
+                            <a href="http:\\127.0.0.1:8000\"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a class="active" href="http:\\127.0.0.1:8000\youtube\"><i class="fa fa-wrench fa-fw"></i> Youtube</span></a>
+                        </li>
+                        <li>
+                            <a href="http:\\127.0.0.1:8000\twitter\"><i class="fa fa-edit fa-fw"></i> Twitter</a>
+                        </li>
+                        <li>
+                            <a href="http:\\127.0.0.1:8000\pinterest\"><i class="fa fa-sitemap fa-fw"></i> Pinterest</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header fa" style="font-size: 20px;margin-top: 9px;color: green;">YouTube Search Results</h1>
+                </div>
+            </div>
+           
+             <!-- /.form row -->
+                        <div class="panel-body" style="margin-left: -115px">
+                                <form class="form-horizontal" action="/ytubesearch/" method="post">
+                                      <div class="form-group">
+                                         <label  class="control-label fa col-xs-2" style="font-size: 20px;color: green;">Query</label>
+                                           <div class="col-xs-8">
+                                             <input type="text" class="form-control" name="string" input=""></input>
+                                          </div>
+                                      </div>
+                                      <div style="margin-left: 639px;margin-top: -49px;"> <input type="submit" class="btn btn-success" value='Apply'></input> </div>
+                                </form>
+                        </div>
+                  <!-- /.form row -->   <br>
+                     
+    <!-- jQuery Version 1.11.0 -->
+    <script src="{% static 'js/jquery-1.11.0.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static 'js/sb-admin-2.js' %}"></script>
+
+</body>
+
+</html>
