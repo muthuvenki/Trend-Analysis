@@ -21,7 +21,7 @@ class TwitterData:
 
     def oauth_req(self, url, http_method="GET", post_body=None,
                   http_headers=None):
-        consumer = oauth2.Consumer(key="uDPXG8TEXuZihsieIl6iljpJu", secret="Q5X720LpygA8zLMfNIXPC5KybT8ffAbPgcqSWnASUNIFqwAgQs")
+        consumer = oauth2.Consumer(key="", secret="")
         token = oauth2.Token(key="703571076786163715-QrRrcAEE83ViKXZcWoc8COnN8XLlJyX", secret="pK86T8kFOUHpYtIO2FTNnIYi4lmcNfFDH3ZYKqOfIgjB6")
         client = oauth2.Client(consumer, token)
 
@@ -67,7 +67,7 @@ def youtube_analysis(string):
 
 	yutube = {}
 	#Keys
-	DEVELOPER_KEY = "AIzaSyCJKdHZexV8XYc3A14a_ZZOaBa4IZVMOdk" 
+	DEVELOPER_KEY = "" 
 	YOUTUBE_API_SERVICE_NAME = "youtube"
 	YOUTUBE_API_VERSION = "v3"
 
